@@ -1,0 +1,19 @@
+# VSCode or IDE history
+.vscode/
+.idea/
+.history/
+*.log
+
+# Node.js build and cache
+node_modules/
+dist/
+build/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Temporary or local files
+*.tmp
+*.bak
+*.swp
