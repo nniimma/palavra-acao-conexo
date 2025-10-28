@@ -1,8 +1,20 @@
 footer {
-    padding: 31px 30px;
+    padding: 30px 50px;
     background-color: #181828;
     color: #b0b0b0;
     font-family: rubik;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #b0b0b0;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #ffffff;
 }
 
 #waterdrop {

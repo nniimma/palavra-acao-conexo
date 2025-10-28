@@ -101,6 +101,10 @@ main::before {
     transition: transform 0.3s ease;
 }
 
+.question-container {
+    display: none; /* hide all by default */
+}
+
 .question-container:hover {
     transform: translateY(-5px);
     box-shadow: 

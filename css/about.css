@@ -1,0 +1,313 @@
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+main h1 {
+    font-size: 3.2em;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35 0%, #2563eb 50%, #dc2626 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+main .subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+
+main .project-intro {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin-bottom: 60px;
+    border-left: 6px solid #ff6b35;
+    position: relative;
+    overflow: hidden;
+}
+
+main .project-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+main .project-intro h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+main .project-intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+main .project-intro p:last-child {
+    margin-bottom: 0;
+}
+
+main .team-section {
+    margin-top: 80px;
+}
+
+main .section-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, #ff6b35 0%, #2563eb 50%, #dc2626 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+main .supervisor-card {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(255, 107, 53, 0.3);
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .supervisor-card::before {
+    content: '⭐';
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 4em;
+    opacity: 0.2;
+}
+
+main .supervisor-image {
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+main .supervisor-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+main .supervisor-info {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+main .supervisor-info h3 {
+    font-size: 2em;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+main .supervisor-info .role {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+main .supervisor-info p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 0;
+    opacity: 0.95;
+}
+
+main .interns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+main .intern-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+main .intern-card:nth-child(3n+1) {
+    border-top: 5px solid #ff6b35;
+}
+
+main .intern-card:nth-child(3n+1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+main .intern-card:nth-child(3n+2) {
+    border-top: 5px solid #2563eb;
+}
+
+main .intern-card:nth-child(3n+2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+main .intern-card:nth-child(3n+3) {
+    border-top: 5px solid #dc2626;
+}
+
+main .intern-card:nth-child(3n+3)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+main .intern-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+main .intern-image {
+    position: relative;
+    z-index: 1;
+}
+
+main .intern-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #f0f0f0;
+}
+
+main .intern-card h3 {
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+main .intern-card .function {
+    font-size: 1em;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+main .intern-card:nth-child(3n+1) .function {
+    color: #ff6b35;
+}
+
+main .intern-card:nth-child(3n+2) .function {
+    color: #2563eb;
+}
+
+main .intern-card:nth-child(3n+3) .function {
+    color: #dc2626;
+}
+
+main .intern-card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 968px) {
+    main .supervisor-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    main .interns-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    main h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 40px 20px;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main .project-intro {
+        padding: 35px 25px;
+    }
+
+    main .supervisor-card {
+        padding: 30px 25px;
+    }
+
+    main .supervisor-image img {
+        width: 150px;
+        height: 150px;
+    }
+}

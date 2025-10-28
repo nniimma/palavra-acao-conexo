@@ -1,0 +1,342 @@
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+main h1 {
+    font-size: 3.2em;
+    font-weight: 800;
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+main .phase-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+}
+
+main .intro-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+    border-left: 6px solid #dc2626;
+    position: relative;
+    overflow: hidden;
+}
+
+main .intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+main .intro-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+main .intro-section p:last-child {
+    margin-bottom: 0;
+}
+
+main h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #dc2626;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main h2::before {
+    content: '';
+    width: 6px;
+    height: 40px;
+    background: linear-gradient(180deg, #dc2626 0%, #ef4444 100%);
+    border-radius: 3px;
+}
+
+main .divider-section {
+    background: white;
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    margin: 40px 0;
+}
+
+main .divider-section p {
+    font-size: 1.05em;
+    color: #555;
+    margin: 0;
+}
+
+main .image-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+main .image-section h3 {
+    color: #dc2626;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+main .tabuleiro-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+}
+
+main .tabuleiro-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+main .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+main .card-item {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(220, 38, 38, 0.2);
+}
+
+main .card-item h4 {
+    color: #dc2626;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+main .card-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+main .rules-container {
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin-top: 40px;
+}
+
+main .rules-container > ol {
+    list-style: none;
+    counter-reset: rule-counter;
+    padding: 0;
+    margin: 0;
+}
+
+main .rules-container > ol > li {
+    counter-increment: rule-counter;
+    margin-bottom: 35px;
+    padding-left: 70px;
+    position: relative;
+}
+
+main .rules-container > ol > li::before {
+    content: counter(rule-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.3em;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+}
+
+main .rules-container > ol > li strong {
+    color: #dc2626;
+    font-size: 1.15em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+main .rules-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+main .rules-container ul li {
+    padding: 18px 25px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border-radius: 12px;
+    border-left: 4px solid #ef4444;
+    position: relative;
+}
+
+main .rules-container ul li::before {
+    content: '▸';
+    color: #dc2626;
+    font-size: 1.3em;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main .example {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 12px;
+    font-style: italic;
+    color: #666;
+    border: 2px dashed #fca5a5;
+    font-size: 0.95em;
+}
+
+main .example::before {
+    content: '💡 ';
+    margin-right: 5px;
+}
+
+main .closure-box {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: white;
+    padding: 40px 45px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(220, 38, 38, 0.4);
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .closure-box::before {
+    content: '🌐';
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5em;
+    opacity: 0.2;
+}
+
+main .closure-box h3 {
+    color: white;
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+main .closure-box p {
+    margin: 0 0 15px 0;
+    font-size: 1.1em;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+}
+
+main .closure-box p:last-child {
+    margin-bottom: 0;
+}
+
+main p {
+    line-height: 1.8;
+    color: #555;
+}
+
+main .coming-soon {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-top: 40px;
+    border: 2px dashed #fca5a5;
+}
+
+main .coming-soon h3 {
+    color: #dc2626;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+main .coming-soon p {
+    color: #666;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 40px 20px;
+    }
+
+    main h1 {
+        font-size: 2.2em;
+    }
+
+    main .intro-section,
+    main .rules-container {
+        padding: 30px 25px;
+    }
+
+    main .rules-container > ol > li {
+        padding-left: 60px;
+    }
+
+    main .rules-container > ol > li::before {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1em;
+    }
+}
