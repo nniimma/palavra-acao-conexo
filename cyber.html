@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Bullying</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="Logo">
+                <span>Palavra-Ação-Conexão</span>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a class="home" href="./index.html">Home</a></li>
+                <li><a class="verbal" href="./verbal.html">Bullying Verbal</a></li>
+                <li><a class="physical" href="./physical.html">Bullying Físico</a></li>
+                <li class="activeLink"><a class="cyber" href="./cyber.html">Cyber Bullying</a></li>
+                <li><a class="contact" href="./contact.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Welcome to Our Anti-Bullying Board Game</h2>
+        <p>
+            This interactive board game was created as part of a psychology class project to raise awareness about bullying and promote empathy among players. Through engaging gameplay, players learn about the impact of bullying and develop strategies to combat it.
+        </p>
+        <p>
+            The game combines education with entertainment, making it a powerful tool for schools, families, and communities to discuss this important topic in an accessible and meaningful way.
+        </p>
+    </div>
+
+    <div id="waterdrop"></div>
+    <footer>
+            <p>© 2025 Palavra-Ação-Conexão. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+<script src="./js/nav.js"></script>
+<script src="./js/banner.js"></script>
+<script src="./js/content.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+ <script> 
+    jQuery('#waterdrop').raindrops({color:'#1c1f2f', canvasHeight:150, density: 0.1, frequency: 20});
+</script>
+</html>

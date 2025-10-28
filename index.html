@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAC</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="Logo">
+                <span>Palavra-Ação-Conexão</span>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li class="activeLink"><a class="home" href="./index.html">Home</a></li>
+                <li><a class="verbal" href="./verbal.html">Bullying Verbal</a></li>
+                <li><a class="physical" href="./physical.html">Bullying Físico</a></li>
+                <li><a class="cyber" href="./cyber.html">Cyber Bullying</a></li>
+                <li><a class="contact" href="./contact.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Image Carousel Banner -->
+    <div class="carousel-container" id="home">
+        <div class="carousel-slide slide1 active">
+            <img src="/img/game1.jpeg" alt="game image">
+        </div>
+        <div class="carousel-slide slide2">
+            <img src="/img/game2.jpeg" alt="game image">
+        </div>
+        <div class="carousel-slide slide3">
+            <img src="/img/game3.jpeg" alt="game image">
+        </div>
+
+        <div class="carousel-controls">
+            <button class="carousel-dot active" onclick="goToSlide(0)"></button>
+            <button class="carousel-dot" onclick="goToSlide(1)"></button>
+            <button class="carousel-dot" onclick="goToSlide(2)"></button>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>🎲 Palavra-Ação-Conexão</h1>
+        <p>Jogo Educativo de Prevenção ao Bullying</p>
+    </div>
+
+    <!-- Section 1 - White: O que é o jogo? -->
+    <section class="section-white">
+        <div class="container">
+            <h2 class="section-title">1. O que é o jogo?</h2>
+            <div class="content-card">
+                <h3>🎯 Ferramenta Lúdica e Interativa</h3>
+                <p>
+                    O jogo é uma ferramenta lúdica e interativa que visa promover a conscientização e a prevenção do
+                    bullying e destina-se a crianças e adolescentes de <strong>8 a 16 anos</strong>. Dessa forma, ele
+                    consiste em um tabuleiro lúdico e interativo 3 em 1 denominado
+                    <strong>"Palavra-Ação-Conexão"</strong>.
+                </p>
+                <p>
+                    Este nome faz referência às três formas de manifestação do bullying que são abordadas:
+                    <strong>verbal</strong>, <strong>físico</strong> e <strong>virtual (cyberbullying)</strong>. O uso
+                    de jogos de tabuleiro e cartas com este público tende a ser eficaz, despertando curiosidade e
+                    motivação para a aprendizagem ativa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 - Blue: Como funciona? -->
+    <section class="section-blue">
+        <div class="container">
+            <h2 class="section-title">2. Como ele funciona?</h2>
+            <div class="content-card" style="background: rgba(255, 255, 255, 0.95); color: #333;">
+                <h3>🎮 Mecânica do Jogo</h3>
+                <p>
+                    O "Palavra-Ação-Conexão" é um jogo de tabuleiro que atua como recurso pedagógico e lúdico. O jogo é
+                    projetado para ter continuidade, utilizando um <strong>tabuleiro infinito</strong>, organizado de
+                    forma que as casas possam ser repetidas pelos grupos. O fim do jogo é definido pelo tempo
+                    previamente estipulado.
+                </p>
+                <p>
+                    Para iniciar, os participantes são separados em grupos, aconselha-se que o mesmo grupo seja mantido
+                    para as três fases, mesmo que elas sejam realizadas em momentos diferentes. O percurso no tabuleiro
+                    é feito através do lançamento de um dado. A cada nova fase do jogo, novos elementos são incorporados
+                    para estimular a atenção e aprendizagem ativa dos participantes.
+                </p>
+            </div>
+
+            <div class="phase-cards">
+                <div class="phase-card phase-card-verbal">
+                    <div class="phase-number">01</div>
+                    <h3>💬 Bullying Verbal</h3>
+                    <p>Primeira fase focada em palavras e comunicação</p>
+                </div>
+                <div class="phase-card phase-card-physical">
+                    <div class="phase-number">02</div>
+                    <h3>✊ Bullying Físico</h3>
+                    <p>Segunda fase sobre agressões físicas</p>
+                </div>
+                <div class="phase-card phase-card-cyber">
+                    <div class="phase-number">03</div>
+                    <h3>📱 Bullying Virtual</h3>
+                    <p>Terceira fase sobre cyberbullying</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 - Orange: Objetivos -->
+    <section class="section-orange">
+        <div class="container">
+            <h2 class="section-title">3. Qual é o objetivo do jogo?</h2>
+            <div class="content-card" style="background: rgba(255, 255, 255, 0.95); color: #333;">
+                <h3>🎯 Objetivo Geral</h3>
+                <p>
+                    O objetivo geral do projeto, alcançado através do jogo, é <strong>promover a conscientização e a
+                        prevenção do bullying</strong> (verbal, físico e virtual). Logo, o jogo busca prevenir situações
+                    de violência, estimular a empatia e incentivar práticas de respeito no ambiente escolar.
+                </p>
+            </div>
+
+            <div class="objectives-grid">
+                <div class="objective-item">
+                    <p><span class="objective-icon">🔍</span> Identificar o que caracteriza o bullying, suas formas de
+                        manifestação e consequências.</p>
+                </div>
+                <div class="objective-item">
+                    <p><span class="objective-icon">💭</span> Estimular a reflexão crítica, incentivando a empatia e o
+                        respeito.</p>
+                </div>
+                <div class="objective-item">
+                    <p><span class="objective-icon">🛡️</span> Desenvolver estratégias de enfrentamento e de apoio a
+                        colegas em situações de bullying.</p>
+                </div>
+                <div class="objective-item">
+                    <p><span class="objective-icon">🤝</span> Promover o trabalho em equipe, a cooperação e a
+                        valorização de atitudes positivas.</p>
+                </div>
+                <div class="objective-item">
+                    <p><span class="objective-icon">⚠️</span> Contribuir para que as crianças compreendam que o bullying
+                        é nocivo e prejudicial.</p>
+                </div>
+                <div class="objective-item">
+                    <p><span class="objective-icon">🌱</span> Possibilitar que as crianças internalizem os prejuízos do
+                        bullying e reflitam sobre atitudes adequadas.</p>
+                </div>
+            </div>
+
+            <div class="content-card" style="background: rgba(255, 255, 255, 0.95); color: #333; margin-top: 40px;">
+                <h3>✨ Resultado Final</h3>
+                <p style="font-size: 1.2rem; text-align: center;">
+                    <strong>Construção de um ambiente escolar mais saudável e respeitoso</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 - Red: Materiais -->
+    <section class="section-red">
+        <div class="container">
+            <h2 class="section-title">4. Quais os materiais utilizados?</h2>
+
+            <div class="materials-container">
+                <div class="material-group">
+                    <h3>📦 Materiais Principais</h3>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;">
+                        Os principais materiais utilizados no conteúdo e na mecânica do jogo, além do
+                        <strong>tabuleiro</strong> e do <strong>dado</strong>, são os diversos tipos de cartas, que
+                        variam conforme a fase (tipo de bullying).
+                    </p>
+                </div>
+
+                <div class="material-group-verbal">
+                    <h3>💬 Bullying Verbal (Fase 1)</h3>
+
+                    <div class="card-type">
+                        <h4>Cartas de Ação</h4>
+                        <p>Apresentam condutas positivas a serem incentivadas (vantajosas) e condutas negativas que
+                            devem ser evitadas (desvantajosas) e marcam ações instantâneas no jogo, por exemplo,
+                            <em>"volte duas casas"</em>.</p>
+                    </div>
+
+                    <div class="card-type">
+                        <h4>Cartas Verbais</h4>
+                        <p>Divididas em dois subtipos:</p>
+
+                        <div class="subcard">
+                            <h5>📋 Carta-Situacional</h5>
+                            <p>Propõe a discussão coletiva e a resolução de conflitos a partir de situações hipotéticas.
+                            </p>
+                        </div>
+
+                        <div class="subcard">
+                            <h5>❓ Carta de Questionamento</h5>
+                            <p>Solicita a reflexão e a resposta a uma pergunta relacionada ao tema.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-group-physical">
+                    <h3>✊ Bullying Físico (Fase 2)</h3>
+
+                    <div class="card-type">
+                        <h4>Cartas SPL</h4>
+                        <p>Indicadas para tarefas de desenho ou mímica. As letras S, P e L correspondem a:</p>
+
+                        <div class="subcard">
+                            <h5>S - Situação</h5>
+                            <p>Contextos e cenários onde o bullying pode ocorrer.</p>
+                        </div>
+
+                        <div class="subcard">
+                            <h5>P - Pessoa/Agente</h5>
+                            <p>Quem pode ajudar, como o professor ou outros adultos.</p>
+                        </div>
+
+                        <div class="subcard">
+                            <h5>L - Lugar</h5>
+                            <p>Onde o bullying pode ocorrer, como a sala de aula, pátio, etc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-group-cyber">
+                    <h3>📱 Bullying Virtual / Cyberbullying (Fase 3)</h3>
+
+                    <div class="card-type">
+                        <h4>Cartas QR-Code</h4>
+                        <p>Cartas interativas com códigos QR para conteúdo digital relacionado ao cyberbullying.</p>
+                    </div>
+
+                    <div class="card-type">
+                        <h4>Cartas-pista</h4>
+                        <p>Fornecem dicas e informações para auxiliar nas atividades da fase virtual.</p>
+                    </div>
+                </div>
+
+                <div class="material-group-complementary">
+                    <h3>📚 Materiais Complementares</h3>
+
+                    <div class="card-type">
+                        <h4>Manual de Instruções</h4>
+                        <p>Apresenta as regras e o modo de funcionamento do jogo para cada fase. São três manuais para
+                            que os tabuleiros possam ser utilizados separadamente.</p>
+                    </div>
+
+                    <div class="card-type">
+                        <h4>Lista de Itens de Pontuação</h4>
+                        <p>Utilizada para recompensar (por exemplo, espírito de equipe e participação) ou penalizar (por
+                            exemplo, desrespeito ou excesso de barulho) o comportamento dos alunos durante a partida.
+                        </p>
+                    </div>
+
+                    <div
+                        style="background: rgba(255, 255, 255, 0.25); padding: 20px; border-radius: 10px; margin-top: 20px; border-left: 5px solid white;">
+                        <p style="font-size: 1.1rem; margin: 0;">
+                            <strong>💡 Observação:</strong> Destaca-se que alguns materiais - como os Itens de
+                            pontuações - podem ser dispensados sem prejuízos ao andamento do jogo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="waterdrop"></div>
+    <footer>
+        <p>© 2025 Palavra-Ação-Conexão. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+<script src="./js/nav.js"></script>
+<script src="./js/banner.js"></script>
+<script src="./js/content.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+<script>
+    jQuery('#waterdrop').raindrops({
+        color: '#1c1f2f',
+        canvasHeight: 150,
+        density: 0.1,
+        frequency: 20
+    });
+</script>
+
+</html>
