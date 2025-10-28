@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Pontuação - Jogo em Grupos</title>
+    <link rel="stylesheet" href="./css/pointing.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏆 FOLHA DE PONTUAÇÃO 🏆</h1>
+            <p>Jogo em Grupos - Sistema de Pontos por Comportamento</p>
+        </div>
+        
+        <table class="scoring-table">
+            <thead>
+                <tr>
+                    <th>CATEGORIAS DE AVALIAÇÃO</th>
+                    <th class="team-header">GRUPO 1</th>
+                    <th class="team-header">GRUPO 2</th>
+                    <th class="team-header">GRUPO 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="category-cell">
+                        <div class="category-title">1. Respeito</div>
+                        <div class="category-description">Escutar sem interromper, linguagem gentil</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                </tr>
+                
+                <tr>
+                    <td class="category-cell">
+                        <div class="category-title">2. Empatia</div>
+                        <div class="category-description">Reconhecer sentimentos, apoiar excluídos</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                </tr>
+                
+                <tr>
+                    <td class="category-cell">
+                        <div class="category-title">3. Cooperação</div>
+                        <div class="category-description">Trabalho em equipe, decisões justas</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                </tr>
+                
+                <tr>
+                    <td class="category-cell">
+                        <div class="category-title">4. Inclusão</div>
+                        <div class="category-description">Incluir tímidos, evitar exclusão</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                </tr>
+                
+                <tr>
+                    <td class="category-cell">
+                        <div class="category-title">5. Resolução de Conflitos</div>
+                        <div class="category-description">Resolver pacificamente, sem culpar</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                </tr>
+                
+                <tr>
+                    <td class="category-cell">
+                        <div class="category-title">6. Responsabilidade</div>
+                        <div class="category-description">Assumir erros, se posicionar contra bullying</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                </tr>
+                
+                <tr>
+                    <td class="category-cell">
+                        <div class="category-title">7. Silêncio Respeitoso</div>
+                        <div class="category-description">Respeitar outros grupos jogando</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                    <td><input type="number" class="score-input" min="-100" max="100" step="10"></td>
+                </tr>
+                
+                <tr>
+                    <td class="category-cell category-special">
+                        <div class="category-title">8. Desempenho no Jogo</div>
+                        <div class="category-description">Pontos das atividades do tabuleiro</div>
+                    </td>
+                    <td><input type="number" class="score-input" min="0" max="10000" step="100"></td>
+                    <td><input type="number" class="score-input" min="0" max="10000" step="100"></td>
+                    <td><input type="number" class="score-input" min="0" max="10000" step="100"></td>
+                </tr>
+                
+                <tr class="total-row">
+                    <td><strong>TOTAL FINAL</strong></td>
+                    <td><strong id="total1">0</strong></td>
+                    <td><strong id="total2">0</strong></td>
+                    <td><strong id="total3">0</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="instructions">
+            <h3>📋 Instruções de Pontuação:</h3>
+            <p><strong>• Categorias 1-8:</strong> Pontue de 0 a 100 pontos para cada comportamento observado</p>
+            <p><strong>• Categoria 9:</strong> Insira os pontos conquistados nas atividades do tabuleiro</p>
+            <p><strong>• Avaliação contínua:</strong> Observe os grupos durante toda a atividade</p>
+            <p><strong>• Foco positivo:</strong> Destaque e recompense os bons comportamentos!</p>
+        </div>
+    </div>
+    
+    <script src="./js/pointing.js"></script>
+</body>
+</html>

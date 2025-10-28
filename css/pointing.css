@@ -1,0 +1,193 @@
+@page {
+    size: A4;
+    margin: 1cm;
+}
+
+/* Styles specific for printing */
+@media print {
+body {
+    background: white !important;
+    color: black !important;
+}
+
+.container {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    max-width: 100% !important;
+}
+
+.header {
+    background: none !important;
+    color: black !important;
+    border-bottom: 2px solid #000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.scoring-table th,
+.team-header,
+.total-row,
+.category-special {
+    background: #ddd !important;  /* makes sure headers are visible */
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.instructions {
+    background: none !important;
+    border: none !important;
+    color: black !important;
+}
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.scoring-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.scoring-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.scoring-table th:first-child {
+    text-align: left;
+    width: 40%;
+}
+
+.category-cell {
+    background: #f8f9ff;
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 2px solid #e1e5f7;
+    color: #4a5568;
+}
+
+.category-title {
+    font-size: 16px;
+    color: #2d3748;
+}
+
+.category-description {
+    font-size: 12px;
+    color: #718096;
+    font-weight: normal;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.scoring-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    background: white;
+}
+
+.score-input {
+    width: 50px;
+    height: 35px;
+    border: 2px solid #cbd5e0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background: #f7fafc;
+    transition: all 0.3s ease;
+}
+
+.score-input:focus {
+    border-color: #4facfe;
+    background: white;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.3);
+    outline: none;
+}
+
+.team-header {
+    background: linear-gradient(135deg, #38a169 0%, #48bb78 100%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.total-row {
+    background: linear-gradient(135deg, #ed8936 0%, #f6ad55 100%);
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.total-row td {
+    padding: 15px;
+    border-bottom: none;
+}
+
+.instructions {
+    background: #e6fffa;
+    border-left: 5px solid #38b2ac;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.instructions h3 {
+    margin-top: 0;
+    color: #234e52;
+}
+
+.instructions p {
+    margin: 5px 0;
+    color: #2d3748;
+}
+
+.category-special {
+    background: linear-gradient(135deg, #fbb6ce 0%, #f093fb 100%);
+    color: white;
+}

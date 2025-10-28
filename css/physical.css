@@ -282,6 +282,7 @@ main .closure-box p {
     line-height: 1.7;
     position: relative;
     z-index: 1;
+    color: white;
 }
 
 main .closure-box p:last-child {
