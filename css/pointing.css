@@ -28,7 +28,7 @@ body {
 .team-header,
 .total-row,
 .category-special {
-    background: #ddd !important;  /* makes sure headers are visible */
+    background: #ddd !important;
     color: black !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -45,7 +45,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
     min-height: 100vh;
     color: #333;
 }
@@ -63,7 +63,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px;
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     border-radius: 10px;
     color: white;
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .scoring-table th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     color: white;
     padding: 15px 10px;
     font-weight: bold;
@@ -104,10 +104,10 @@ body {
 }
 
 .category-cell {
-    background: #f8f9ff;
+    background: #fef2f2;
     font-weight: bold;
     padding: 12px;
-    border-bottom: 2px solid #e1e5f7;
+    border-bottom: 2px solid #fecaca;
     color: #4a5568;
 }
 
@@ -144,22 +144,22 @@ body {
 }
 
 .score-input:focus {
-    border-color: #4facfe;
+    border-color: #2563eb;
     background: white;
-    box-shadow: 0 0 10px rgba(79, 172, 254, 0.3);
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
     outline: none;
 }
 
 .team-header {
-    background: linear-gradient(135deg, #38a169 0%, #48bb78 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
     color: white;
     font-size: 16px;
     font-weight: bold;
 }
 
 .total-row {
-    background: linear-gradient(135deg, #ed8936 0%, #f6ad55 100%);
-    color: blue;
+    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+    color: white;
     font-weight: bold;
     font-size: 18px;
 }
@@ -170,8 +170,8 @@ body {
 }
 
 .instructions {
-    background: #e6fffa;
-    border-left: 5px solid #38b2ac;
+    background: #fff7ed;
+    border-left: 5px solid #ea580c;
     padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
@@ -179,7 +179,7 @@ body {
 
 .instructions h3 {
     margin-top: 0;
-    color: #234e52;
+    color: #9a3412;
 }
 
 .instructions p {
@@ -188,6 +188,6 @@ body {
 }
 
 .category-special {
-    background: linear-gradient(135deg, #fbb6ce 0%, #f093fb 100%);
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
     color: white;
 }
