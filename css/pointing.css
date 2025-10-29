@@ -159,7 +159,7 @@ body {
 
 .total-row {
     background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
-    color: white;
+    color: red;
     font-weight: bold;
     font-size: 18px;
 }
