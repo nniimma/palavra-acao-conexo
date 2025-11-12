@@ -241,21 +241,13 @@ main .tabuleiro-container {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-    margin-bottom: 50px;
 }
 
 main .tabuleiro-container img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
-    border-radius: 15px;
+    clip-path: inset(0 15% 0 0);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-}
-
-main .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
 }
 
 main .card-item {
@@ -264,6 +256,15 @@ main .card-item {
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card-item-img{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 main .card-item:hover {
@@ -288,6 +289,16 @@ main .card-item img {
 main p {
     line-height: 1.8;
     color: #555;
+}
+
+@media (max-width: 850px) {
+    .card-item-img{
+        flex-direction: column;
+    }
+
+    .card-item-img img{
+        width: 60%;
+    }
 }
 
 @media (max-width: 768px) {

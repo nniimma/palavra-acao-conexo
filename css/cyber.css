@@ -120,7 +120,7 @@ main .tabuleiro-container {
 }
 
 main .tabuleiro-container img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
@@ -139,6 +139,11 @@ main .card-item {
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.cart-item-digital img{
+    width: 350px;
 }
 
 main .card-item:hover {
