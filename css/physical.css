@@ -124,6 +124,7 @@ main .tabuleiro-container img {
     height: auto;
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    rotate: 180deg;
 }
 
 main .cards-grid {
